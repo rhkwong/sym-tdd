@@ -1,0 +1,20 @@
+name: sym-tdd
+version: 1.0.0
+description: Test-driven development workflow and patterns
+files:
+  - path: files/QUICK_REFERENCE.md
+    dest: .claude/docs/tdd/QUICK_REFERENCE.md
+  - path: files/TDD_WORKFLOW.md
+    dest: .claude/docs/tdd/TDD_WORKFLOW.md
+  - path: files/TEST_PATTERNS.md
+    dest: .claude/docs/tdd/TEST_PATTERNS.md
+instructions:
+  - targets:
+      claude: CLAUDE.md
+      cursor: .cursorrules
+      copilot: .github/copilot-instructions.md
+      default: AGENTS.md
+    content: |
+      ## Test-Driven Development
+
+      When implementing features or fixing bugs, follow TDD. See `.claude/docs/tdd/QUICK_REFERENCE.md` for the workflow, with details in `TDD_WORKFLOW.md` and `TEST_PATTERNS.md`.
