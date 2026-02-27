@@ -1,0 +1,27 @@
+author: rhkwong
+license: MIT
+category: workflow
+stability: stable
+tags: [testing, tdd, workflow, red-green-refactor]
+agents: [claude, cursor, windsurf, copilot]
+languages: [any]
+min_symposia_version: ">=0.5.0"
+
+when_to_use: implementing features, fixing bugs, writing tests
+not_when: quick prototyping, one-off scripts, exploratory spikes
+
+scenarios:
+  - add a new feature with full test coverage
+  - fix a bug and add regression test
+  - refactor with confidence using existing tests
+  - write tests for untested legacy code
+
+problems:
+  - tests written after code miss edge cases
+  - no consistent test structure
+  - TDD workflow unclear for coding agents
+
+depends_on: []
+complements: [sym-refactoring]
+conflicts_with: []
+supersedes: null
