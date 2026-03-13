@@ -1,6 +1,11 @@
 name: sym-tdd
-version: 1.0.1
+version: 1.1.0
 description: Test-driven development workflow and patterns
+postInstall:
+  message: "Scanning your project for test infrastructure gaps."
+  activate:
+    file: files/skills/tdd-setup/SKILL.md
+
 files:
   - path: files/QUICK_REFERENCE.md
     dest: .claude/docs/tdd/QUICK_REFERENCE.md
@@ -8,6 +13,8 @@ files:
     dest: .claude/docs/tdd/TDD_WORKFLOW.md
   - path: files/TEST_PATTERNS.md
     dest: .claude/docs/tdd/TEST_PATTERNS.md
+  - path: files/skills/tdd-setup/SKILL.md
+    dest: .claude/skills/tdd-setup/SKILL.md
 instructions:
   - targets:
       claude: CLAUDE.md

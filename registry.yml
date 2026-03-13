@@ -1,6 +1,7 @@
 author: rhkwong
 license: MIT
 category: workflow
+version: 1.1.0
 stability: stable
 tags: [testing, tdd, workflow, red-green-refactor]
 agents: [claude, cursor, windsurf, copilot]
